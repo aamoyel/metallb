@@ -57,16 +57,14 @@ You need to have :
 
 1. Clone the repo :
    ```sh
-   git clone git@github.com:aamoyel/metallb.git && cd metallb
+   git clone https://github.com/aamoyel/metallb.git && cd metallb
    ```
-2. Create secretKey
-   ```sh
-   openssl rand -base64 128 > configs/secretKey
-   ```
+2. Create change ip pool config in layer2-config.yml. You can find docs here: https://metallb.universe.tf/configuration/#defining-the-ips-to-assign-to-the-load-balancer-services
 3. Deploy the project on your cluster
    ```sh
    kustomize build . | kubectl apply -f -
    ```
+4. If you have errors like `no matches for kind "IPAddressPool" in version ...` or `Internal error occurred: failed calling webhook ...` ensure pods are running in metallb-system namespace and re execure step 3 (build and apply command).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
