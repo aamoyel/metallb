@@ -64,7 +64,7 @@ You need to have :
    ```sh
    kustomize build . | kubectl apply -f -
    ```
-4. If you have errors like `no matches for kind "IPAddressPool" in version ...` or `Internal error occurred: failed calling webhook ...` ensure pods are running in metallb-system namespace and re execure step 3 (build and apply command).
+4. If you have errors like `no matches for kind "IPAddressPool" in version ...` or `Internal error occurred: failed calling webhook ...` ensure pods are running in metallb-system namespace and re run step 3 (build and apply command).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
