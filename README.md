@@ -27,14 +27,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
 This project allows you to deploy [MetalLB](https://metallb.universe.tf/) on Kubernetes with Kustomize binary.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ### Built With
-
 * [Kubernetes](https://kubernetes.io/)
 * [Kustomize](https://kustomize.io/)
 
@@ -44,8 +42,6 @@ This project allows you to deploy [MetalLB](https://metallb.universe.tf/) on Kub
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up this project on your kubernetes cluster.
 
 ### Prerequisites
 
